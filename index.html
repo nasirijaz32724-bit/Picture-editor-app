@@ -66,5 +66,18 @@ btn.onclick = function(){
     link.click();
 }
 </script>
+    <br><br>
+
+<input type="text" id="textInput" placeholder="Photo par text likho">
+<button onclick="addText()">Add Text</button>
+
+<p id="photoText"></p>
+
+<script>
+function addText(){
+    document.getElementById("photoText").innerHTML =
+    document.getElementById("textInput").value;
+}
+</script>
 </body>
 </html>
