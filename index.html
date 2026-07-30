@@ -52,5 +52,19 @@ slider.oninput = function(){
     image.style.filter = "brightness(" + slider.value + "%)";
 }
 </script>
+    <br><br>
+
+<button id="download">Download Picture</button>
+
+<script>
+const btn = document.getElementById("download");
+
+btn.onclick = function(){
+    const link = document.createElement("a");
+    link.download = "edited-picture.png";
+    link.href = image.src;
+    link.click();
+}
+</script>
 </body>
 </html>
