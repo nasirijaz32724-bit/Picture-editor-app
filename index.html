@@ -11,5 +11,15 @@
 
 <p>Meri pehli app ban rahi hai</p>
 <input type="file" accept="image/*">
+  <img id="preview" width="300">
+
+<script>
+const input = document.querySelector('input');
+const image = document.getElementById('preview');
+
+input.onchange = function(){
+    image.src = URL.createObjectURL(input.files[0]);
+}
+</script>  
 </body>
 </html>
